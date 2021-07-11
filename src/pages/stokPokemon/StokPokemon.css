@@ -1,0 +1,114 @@
+.StokPokemon {
+    width: 640px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.head {
+    width: 100%;
+    height: 48px;
+    margin: 40px 0px 20px;
+}
+
+.headTitle {
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #333333;
+}
+
+.search {
+    /* position: static; */
+    width: 400px;
+    height: 36px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    box-shadow: inset 0px 2px 4px rgba(51, 51, 51, 0.15);
+    border-radius: 4px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.searchIcon {
+    width: 18px;
+    height: 18px;
+    margin: 0px 8px;
+}
+
+.searchInput {
+    font-weight: 400;
+    font-size: 14px;
+    color: #858585;
+    width: 100%;
+    border-style: none;
+    outline: none;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;;
+}
+
+.frameList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.frameListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.frameListItemHead {
+    font-family: 'Rubik', sans-serif;
+    color: #333333;
+}
+
+.frameListItemNama, a {
+    text-decoration: none;
+    color:#006A7A;
+}
+
+.listHr {
+    margin: 0px;
+    width: 100%;
+    border: solid .1px #cccccc;
+}
+
+.listHrHead {
+    border: solid .1px #333333;
+ }
+
+ @media (max-width: 768px) {
+    .StokPokemon {
+        width: 90%;
+        font-size: 14px;
+    }
+    
+    .head {
+        margin: 20px 0px;
+    }
+
+    .headTitle {
+        font-size: 28px;
+    }
+
+    .search {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+ }

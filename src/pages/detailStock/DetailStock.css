@@ -1,0 +1,368 @@
+.DetailStock {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.detailStockTop {
+    width:calc(100% - 80px);
+    margin: 50px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.detailStockLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.detailStockBack {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #006A7A;
+}
+
+.arrowContainer {
+    margin-right: 10px;
+}
+
+.backArrow {
+    width: 16px;
+    height: 14px;
+}
+
+.detailStockPageTitle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.updateStokButton {
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(51, 51, 51, 0.15),
+        inset 0px 2px 2px rgba(255, 255, 255, 0.15),
+        inset 0px -1px 2px rgba(51, 51, 51, 0.15);
+    border-radius: 4px;
+    color: #006A7A;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    width: 105px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.detailStockBottom { 
+    width:calc(100% - 80px);
+    margin: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sisaStokTitle {
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.sisaStokTotal {
+    font-size: 32px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.riwayatStokContainer {
+    margin-top: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.riwayatStokTitle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.riwayatStokKeterangan {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.frame2 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;;
+}
+
+.frameListItem2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.frameListItem2Body {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.frameListItemLeft2 {
+    display: flex;
+    flex: 9;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.frameListItemRight2 {
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.frameListItemHead2 p {
+    font-family: 'Rubik', sans-serif;
+    color: #333333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.frameListItemBody2 {
+    font-weight: normal;
+}
+
+.frameListItemBody2.waktuTanggal2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.frameListItemHead2,
+.frameListItemBody2 {
+    width: 160px;
+}
+
+.frameListItemJmlh,
+.frameListItemStok {
+    text-align: right;
+    width: 70px !important;
+}
+
+.frameListItemJmlh p,
+.frameListItemStok p {
+    font-size: 14px;
+}
+
+.frameListItemBody2.frameListItemStok p {
+    font-weight: 700;
+}
+
+.frameListItemItemKegiatan2 {
+    color: #006A7A;
+    font-weight: 700;
+}
+
+.mobile {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .detailStockTop {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detailStockLeft {
+        justify-content: center;
+    }
+
+    .detailStockBack {
+        box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.15);
+        height: 52px;
+        width: 100vw;
+        justify-content: center;
+        flex-direction: unset;
+     }
+
+    .arrowContainer {
+        margin: 0;
+        position: absolute;
+        left: 20px;
+        top: 20px
+    }
+
+    .backTitle {
+        color: #333;
+        font-family: 'Rubik', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .detailStockPageTitle {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 10px 20px;
+    }
+
+    .updateStokButton {
+        margin: 10px 20px 20px;
+    }
+
+    .detailStockBottom {
+        margin: 0px 20px;
+        width: 90vw;;
+    }
+
+    .frameListItemHead2 {
+        display: none;
+    }
+
+    .sisaStokContainer {
+        margin: 20px 0;
+    }
+
+    .riwayatStokContainer {
+        margin-bottom: -50px;
+    }
+
+    .frame2 {
+        margin: 0;
+    }
+
+    .frameListItem2 {
+        margin: 0;
+        border-bottom: unset;
+    }
+
+    .frameListItem2Body {
+        margin: 0;
+        border-bottom: unset;
+        padding-bottom: 0;
+    }
+
+    .frameListMobileLeft {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid #ccc;
+        margin: 0;
+    }
+
+    .frameListHeadMobile2.mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 1px solid #333;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .frameListHeadLeftMobile2 {
+        flex: 8;
+    }
+
+    .frameListHeadMiddleMobile2 {
+        flex: 2;
+        text-align: right;
+    }
+
+    .frameListHeadRightMobile2 {
+        flex: 2;
+        text-align: right;
+    }
+
+    .frameListHeadItemMobile.mobile {
+        font-family: 'Rubik', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .frameListItemBodyMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .frameListItemLeft2 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 0;
+        flex: 8;
+    }
+    
+    .frameListItemRight2Mobile.mobile {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 4;
+    }
+    
+    .frameListItemBody2Mobile.frameListItemJmlhMobile {
+        flex: 6;
+        text-align: right;
+    }
+    
+    .frameListItemBody2Mobile.frameListItemStokMobile {
+        flex: 6;
+        text-align: right;
+    }
+
+    .frameListItemBody2 p {
+        font-size: 12px;
+    }
+
+    .frameListItemBody2.waktuTanggal2 .waktu2 {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .frameListItemBody2 .frameListItemItemKegiatan2 {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .komaWaktuTanggal2 {
+        display: none;
+    }
+
+    .listHrHead2.listHr2 {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+}
